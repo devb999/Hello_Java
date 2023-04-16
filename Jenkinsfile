@@ -4,14 +4,17 @@ pipeline {
         stage("build") {
             steps {
                 echo 'Building the application...'
+
+                script {
+                    def test = 2 + 2 < 3 ? "Working" : "Not Working"
+                    echo test
+                }
             }
         }
 
         stage("test") {
             steps {
                 echo 'Testing the application...'
-                javac hello.java
-                java hello
             }
         }
 
