@@ -9,6 +9,7 @@ pipeline {
                     def test = 2 + 2 > 3 ? "Working" : "Not Working"
                     echo test
                 }
+                echo 'Application built!'
             }
         }
 
