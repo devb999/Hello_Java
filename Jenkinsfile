@@ -6,7 +6,7 @@ pipeline {
                 echo 'Building the application...'
 
                 script {
-                    def test = 2 + 2 < 3 ? "Working" : "Not Working"
+                    def test = 2 + 2 > 3 ? "Working" : "Not Working"
                     echo test
                 }
             }
